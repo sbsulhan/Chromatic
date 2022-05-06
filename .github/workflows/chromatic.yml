@@ -4,7 +4,7 @@
 name: 'Chromatic'
 
 # Event for the workflow
-on: pull_request
+on: push
 
 # List of jobs
 jobs:
@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     # Job steps
     steps:
-      - uses: actions/checkout@v1
-      - name: Install dependencies
+      - uses: actions/checkout@v2
+      - name: Run dependencies
         run: npm run chromatic
         # 👇 Adds Chromatic as a step in the workflow
       - name: Publish to Chromatic
