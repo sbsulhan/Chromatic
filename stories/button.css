@@ -12,7 +12,9 @@
   background-color: #1ea7fd;
 }
 .storybook-button--secondary {
-  color: rgb(10, 199, 51);
+
+  color: rgb(172, 7, 131);
+
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
